@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="./index.js">
+    </script>
+    <link rel='stylesheet' href="./styles/styles.css" />
+  </head>
+  <body>
+    <div id="chart_div" style="width: 100%; height: 500px;"></div>
+    <div class="options-container">
+      <div>
+            <div class="from">
+              <select id="from_month">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+              </select>
+              <select id="from_year">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+              </select>
+            </div>
+            <div class="to">
+              <select id="to_month">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+              </select>
+              <select id="to_year">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+              </select>
+            </div>
+        </div>
+        <div>
+          <p><b>Выберите шаг</b></p>
+          <p><input name="step" type="radio" value="day" checked> День</p>
+          <p><input name="step" type="radio" value="week"> Неделя</p>
+          <p><input name="step" type="radio" value="month">Месяц</p>
+          <p><input name="step" type="radio" value="year">Год</p>
+        </div>
+        <div>
+          <button onclick="changeChart()">Выбрать</button>
+        </div>
+    </div>
+  </body>
+</html>
